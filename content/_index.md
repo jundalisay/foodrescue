@@ -2,7 +2,7 @@
 title: "Home"
 ---
 
-<!-- {{< pill category="news" content="Introducing Tech Roulette: a bold world of technology" link="https://blog.replit.com/executebig" external=true >}} -->
+<!-- {{< pill category="news" content="Introducing Tech Roulette: a bold world of technology" link="https://pantrypoints.com/circle" external=true >}} -->
 
 {{< intro-title signup=true >}}
 

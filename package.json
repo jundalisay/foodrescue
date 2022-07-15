@@ -1,9 +1,7 @@
 {
-  "name": "eb-www",
+  "name": "foodrescueph",
   "version": "1.0.0",
-  "description": "Food Rescue PH 2.0, with a minimalistic vision and a clearer focus.",
-  "repository": "git@github.com:executebig/www.git",
-  "author": "Mingjie Jiang <jiang@mingjie.dev>",
+  "description": "Food Rescue PH aims to eliminate food waste.",
   "license": "MIT",
   "private": true,
   "dependencies": {
