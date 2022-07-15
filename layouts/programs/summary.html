@@ -1,0 +1,8 @@
+<div class="service service-summary">
+  <div class="service-content">
+    <h2 class="service-title">
+      <a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Params.new }} <span class="badge badge-success" style="font-size: .9rem; vertical-align: middle;">New!</span>{{ end }}</a>
+    </h2>
+    <p>{{ .Description | default .Content | plainify | htmlUnescape | truncate 180 "…" }}</p>
+  </div>
+</div>

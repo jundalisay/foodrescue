@@ -1,0 +1,26 @@
+{
+  "name": "eb-www",
+  "version": "1.0.0",
+  "description": "Food Rescue PH 2.0, with a minimalistic vision and a clearer focus.",
+  "repository": "git@github.com:executebig/www.git",
+  "author": "Mingjie Jiang <jiang@mingjie.dev>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "autoprefixer": "^10.3.7",
+    "cssnano": "^5.0.8",
+    "dotenv": "^10.0.0",
+    "is-svg": "^4.2.2",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.1",
+    "postcss-import": "^14.0.2",
+    "vercel": "^23.1.2",
+    "y18n": "^5.0.8"
+  },
+  "scripts": {
+    "dev": "hugo server",
+    "build": "hugo --gc --minify",
+    "dry": "hugo --gc --minify"
+  }
+}

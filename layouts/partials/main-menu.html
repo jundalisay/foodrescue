@@ -1,0 +1,25 @@
+<div id="main-menu" class="main-menu">
+  <ul>
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <li class="menu-item-{{ .Name | lower }}{{ if eq $currentPage.RelPermalink .URL }} active{{ end }}">
+      <a href="{{.URL}}">
+        {{ .Pre }}
+        <span data-name="{{.Name}}">{{ .Name }}</span>
+      </a>
+    </li>
+    {{end}}
+
+    <li class="menu-item-donate">
+      {{ if eq $currentPage.RelPermalink "/donate/" }}
+      <a href="#!" class="button" id="edoNavButton">
+        <span>Donate</span>
+      </a>
+      {{else}}
+      <a href="/donate" class="button">
+        <span>Donate</span>
+      </a>
+      {{end}}
+    </li>
+  </ul>
+</div>

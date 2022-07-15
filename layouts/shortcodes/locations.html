@@ -1,0 +1,8 @@
+{{ $section := where (where $.Site.RegularPages "Section" "team") ".Params.promoted" true }}
+
+{{ range $section }}
+  <h3 class="rounded-text"><a href="{{ .Page.RelPermalink }}"><strong>{{ .Page.Params.title }}</strong></a> &middot; {{ .Page.Params.jobtitle }}</h3>
+  <p>
+    {{ .Page.Params.location }}
+  </p>
+{{ end }}

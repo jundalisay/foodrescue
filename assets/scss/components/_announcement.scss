@@ -1,0 +1,67 @@
+.announcement {
+  position: relative;
+  overflow-wrap: normal;
+  border-radius: 4px;
+  width: 100%;
+  align-items: center;
+  z-index: 2;
+  margin-bottom: 1rem;
+  background-color: $white-offset;
+  background-repeat: repeat;
+
+  h3 {
+    font-family: $font-family-heading;
+  }
+
+  &.danger {
+    background-color: $highlight-offset;
+  }
+
+  @include media-breakpoint-up(sm) {
+    align-items: center;
+  }
+
+  .announcement-box-top {
+    padding: 20px;
+    line-height: 1.75;
+
+    h1,h2,h3,h4,h5 {
+      margin-top: 0;
+    }
+
+    p.title {
+      font-family: $font-family-heading;
+      margin-bottom: .6rem;
+      color: $black;
+    }
+
+    @include media-breakpoint-up(md) {
+    }
+  }
+
+  .announcement-box-bottom {
+    padding: 0 20px 20px;
+
+    @include media-breakpoint-up(sm) {
+      border: none;
+    }
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  svg {
+    fill: lighten($secondary, 40%);
+    position: absolute;
+    bottom: -9px;
+    right: 0;
+    width: 100px;
+    height: 100px;
+
+    @include media-breakpoint-up(sm) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}

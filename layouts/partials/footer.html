@@ -1,0 +1,58 @@
+{{ $currentPage := . }}
+<div class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="row">
+        <div class="col-6 col-md-3">
+          <ul>
+            <li class="footer-title">
+              {{ .Site.Title }}
+            </li>
+            {{ range .Site.Menus.about }}
+            <li class="menu-item-{{ .Name | lower }}{{ if eq $currentPage.RelPermalink .URL }} active{{ end }}">
+              <a href="{{.URL}}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{end}}
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <ul>
+            <li class="footer-title">
+              Services
+            </li>
+            {{ range .Site.Menus.services }}            
+            <li class="menu-item-{{ .Name | lower }}{{ if eq $currentPage.RelPermalink .URL }} active{{ end }}">
+              <a href="{{.URL}}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{end}}
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <ul>
+            <li class="footer-title">
+              Resources
+            </li>
+            {{ range .Site.Menus.resources }}
+            <li class="menu-item-{{ .Name | lower }}{{ if eq $currentPage.RelPermalink .URL }} active{{ end }}">
+              <a href="{{.URL}}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{end}}
+          </ul>
+        </div>
+        <div class="col-6 col-md-3" style="text-align: center;">
+          <a href="https://foodrescueph.site/" target="_blank" rel="noopener">
+            <img src="/logo.jpg" alt="Food Rescue PH">
+          </a>
+        </div>
+      </div>
+      <p class="footer-copyright mb-0 mt-1">&copy; 2022 Food Rescue PH</p>
+      <p class="footer-copyright mb-0 mt-0"><a href="https://pantrypoints.com/peers">Made by Pantry Peers</a></p>
+    </div>
+  </div>
+</div>

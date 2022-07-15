@@ -1,0 +1,18 @@
+{{ $.Scratch.Add "width" (.Get "width" | default "100%") }}
+{{ $.Scratch.Add "height" (.Get "height" | default "auto") }}
+
+{{ define "header_css" }}
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+{{ end }}
+
+<div class="carousel" data-flickity='{ "lazyLoad": 2, "autoPlay": 2000, "wrapAround": true, "pageDots": false, "freeScroll": true, "freeScrollFriction": 0.03 }'>
+    {{- with (.Get "dir") -}} 
+    {{- $files := readDir (print "/static/" .) }}
+    {{- range $files -}} 
+        {{- $absoluteUrl := print ($.Get "dir") "/" .Name | relURL }}
+          <div class="carousel-cell"><img data-flickity-lazyload="{{ $absoluteUrl }}" /></div>
+        {{- end }}
+    {{- end }}
+</div>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

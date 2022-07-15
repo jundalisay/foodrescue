@@ -1,0 +1,89 @@
+<div class="emailoctopus-form-wrapper emailoctopus-form-default">
+    <p class="emailoctopus-success-message">
+    </p>
+    <p class="emailoctopus-error-message">
+    </p>
+
+
+    <form action="{{ .Site.Params.formcarry }}" method="post" data-message-success="Thanks for subscribing!" data-message-missing-email-address="Your email address is required." data-message-invalid-email-address="Your email address looks incorrect, please try again." data-message-bot-submission-error="This doesn't look like a human submission." data-message-consent-required="Please check the checkbox to indicate your consent." data-message-invalid-parameters-error="This form has missing or invalid fields." data-message-unknown-error="Sorry, an unknown error has occurred. Please try again later.">
+        <div class="form-group">
+            <label for="field_0">
+                Email address
+            </label>
+            <input id="email" name="email" type="email" class="form-control" aria-describedby="emailHelp" placeholder required="required">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else. <a href="/privacy" target="_blank">Privacy -></a></small>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="name">
+                        Name
+                    </label>
+                    <input id="name" name="name" type="text" class="form-control" placeholder required="required">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="city">
+                        Location (City and Barangay)
+                    </label>
+                    <input id="city" name="city" type="text" class="form-control" placeholder required="required">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="phone">
+                        Phone or Mobile
+                    </label>
+                    <input id="phone" name="name" type="text" class="form-control" placeholder required="required">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="fb">
+                        Facebook Name or URL
+                    </label>
+                    <input id="fb" name="fb" type="text" class="form-control">
+                </div>
+            </div>
+        </div>        
+                <div class="form-group">        
+                    <label for="phone">
+                        Your Message
+                    </label>        
+        <textarea class="form-control" type="text" id="message" name="message" class="form-control"></textarea>
+    </div>
+        <button class="button is-primary" type="submit">
+            Subscribe
+        </button>
+    </form>
+</div>
+<!-- <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-recaptcha.js">
+</script>
+<script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-embed.js">
+</script>
+<script>
+    function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    window.onload = () => {
+        let email = getParameterByName("email")
+
+        if (email) {
+            document.getElementById("field_0").value = email
+            document.getElementById("field_1").classList.add('highlight')
+            document.getElementById("field_2").classList.add('highlight')
+
+            document.getElementById("field_1").scrollIntoView()
+            document.getElementById("field_1").focus()
+        }
+    }
+</script> -->

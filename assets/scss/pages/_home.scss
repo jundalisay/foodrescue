@@ -1,0 +1,63 @@
+.page-home {
+  .intro {
+    h1 {
+      em {
+        font-style: normal;
+        color: $secondary;
+      }
+    }
+
+    .intro-sponsors {
+      margin-top: 2rem;
+      span,
+      img {
+        display: inline-block;
+      }
+
+      span {
+        color: #999999;
+        font-size: 0.8rem;
+      }
+
+      .logo {
+        height: 1rem;
+        filter: grayscale(100%);
+        opacity: 1;
+
+        @include media-breakpoint-up(md) {
+          height: 1.2rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+          height: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .journal {
+    p.metadata {
+      font-family: $font-family-heading;
+      font-size: 16px;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      color: $black;
+
+      @include media-breakpoint-up(md) {
+        font-size: 18px;
+      }
+    }
+
+    h2 {
+      @include media-breakpoint-down(md) {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

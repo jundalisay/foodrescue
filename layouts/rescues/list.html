@@ -1,0 +1,46 @@
+{{ define "body_classes" }}page-journals{{ end }}
+{{ define "main" }}
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        {{ .Content }}
+      </div>
+      {{ if .Params.intro_image }}
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+        <img loading="lazy" class="intro-image{{ if .Params.intro_image_absolute }} intro-image-absolute{{ end }}{{ if .Params.intro_image_hide_on_mobile }} intro-image-hide-mobile{{ end }}" src="{{ .Params.intro_image | relURL }}" />
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+<div class="container pb-md-12 pb-6">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      {{ range (.Paginate .RegularPagesRecursive).Pages.ByWeight }}
+      <div class="mb-4">{{ .Render "summary" }}</div>
+      {{ end }}
+      <div class="paginator">
+        {{ if .Paginator.HasPrev }}
+        <a href="{{ .Paginator.Prev.URL }}" class="pagination__link pagination__link--previous button float-left">
+          « Newer
+        </a>
+        {{ end }}
+        {{ if .Paginator.HasNext }}
+        <a href="{{ .Paginator.Next.URL }}" class="pagination__link pagination__link--next button float-right">
+          Older »
+        </a>
+        {{ end }}
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="aside tags">
+        <h2>View By Tags</h3>
+          {{range ($.Site.GetPage "taxonomyTerm" "journals/tags").Pages }}
+          <a href="{{ .RelPermalink }}"><span class="tag badge badge-pill badge-primary">{{.Title}}</span></a>
+          {{end}}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

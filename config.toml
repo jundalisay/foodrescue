@@ -1,0 +1,102 @@
+baseURL = "https://foodrescueph.site/"
+languageCode = "en-us"
+title = "Food Rescue PH"
+
+disableHugoGeneratorInject = true
+disableKinds = ["categories"]
+
+enableRobotsTXT = true
+ignoreErrors = ["error-remote-getjson"]
+
+paginate = 8
+paginatePath = "p"
+
+[outputs]
+home = ["HTML","RSS"]
+
+[params]
+
+  # [params.segment]
+  #   id = "kUqH89S3AJWXRDFvqlkrcHDdWRLaZru2"
+    
+  [params.announcement]
+    show = true
+
+  [params.logo]
+    mobile = "logo.jpg"
+    desktop = "logo.jpg"
+    desktop_height = "36px"
+    desktop_width = "131px"
+    alt = "Food Rescue PH"
+
+  [params.homepage_meta_tags]
+    meta_description = "We rescue food waste and reprocess them for feeding programs or for donations to the poor to prevent hunger and malnutrition."
+    meta_og_title = "Food Rescue PH"
+    meta_og_type = "website"
+    meta_og_url = "https://foodrescueph.site"
+    meta_og_description = "We rescue food waste and reprocess them for feeding programs or for donations to the poor to prevent hunger and malnutrition."
+    meta_twitter_card = "summary_large_image"
+    # meta_twitter_site = "@executebig"
+    # meta_twitter_creator = "@executebig"
+
+[menu]
+  # Main Menu
+
+  [[menu.main]]
+      name = "Team"
+      url = "/team/"
+      weight = 1
+
+  [[menu.main]]
+      name = "Rescues"
+      url = "/rescues/"
+      weight = 3
+
+  [[menu.main]]
+      name = "Subscribe"
+      url = "/subscribe"
+      weight = 7
+
+  # Footer Menu
+      
+  [[menu.about]]
+      name = "Team"
+      url = "/team/"
+      weight = 1
+  
+  [[menu.about]]
+      name = "Contact"
+      url = "/contact/"
+      weight = 2
+
+  [[menu.about]]
+      name = "Donate"
+      url = "/donate/"
+      weight = 3
+
+
+  [[menu.services]]
+    name = "Rescues"
+    url = "/rescues/"
+    weight = 4
+
+  # Resources Menu
+  
+  [[menu.resources]]
+    name = "Privacy"
+    url = "/privacy/"
+      weight = 5
+
+  [[menu.resources]]
+    name = "Conduct"
+    url = "/conduct/"
+      weight = 4
+      
+
+[taxonomies]
+  journals_tags = "journals/tags"
+
+[sitemap]
+  filename = "sitemap.xml"
+  priority = 0.5
+  

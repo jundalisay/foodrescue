@@ -1,0 +1,21 @@
+.page-programs-single {  
+  .content {
+    h1, h2, h3, h4, h5 {
+      font-weight: 600;
+      font-family: $font-family-heading;
+    }
+
+    p {
+      line-height: 1.75; 
+      font-size: 1.2rem;
+      color: $steel;
+    }
+  }
+}
+
+
+.service-title {
+  &.piloting {
+    color: rgba(47, 47, 65, .7);
+  }
+}

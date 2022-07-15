@@ -1,0 +1,40 @@
+.sub-footer {
+  background: $sub-footer-background-color;
+  color: $sub-footer-text-color;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  @include media-breakpoint-up(md) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .sub-footer-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
+  }
+  .vercel {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $white-offset;
+
+    a {
+      opacity: 0.5;
+      transition: all 0.2s ease-in-out;
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .social {
+    a:first-of-type {
+      margin-left: -10px;
+    }
+  }
+}

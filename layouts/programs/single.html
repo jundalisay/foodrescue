@@ -1,0 +1,50 @@
+{{ define "body_classes" }}page-programs-single{{ end }}
+{{ define "main" }}
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <img src="{{.Params.icon}}" class="page-icon" width="128" height="128" />
+  <h1 class="title">
+    {{.Title}}
+    {{ if .Params.pilot }} <span class="badge badge-warning" style="font-size: 1rem; vertical-align: middle;">Invite-Only Pilot</span>{{ end }}
+    {{ if .Params.new }} <span class="badge badge-success" style="font-size: .9rem; vertical-align: middle;">New!</span>{{ end }}
+  </h1>
+  <div class="row justify-content-start">
+    {{ $subpages := ($.Site.GetPage "taxonomyTerm" .Section).Pages.ByWeight }}
+    {{ if gt (len $subpages)  1 }}
+    <div class="col-12 col-md-4 order-md-2">
+      <div class="program-sidenav">
+        <h3>Quick Navigation</h3>
+        <div class="nav flex-column" role="tablist" aria-orientation="vertical">
+          {{ $currentPage := . }}
+          {{ $homePage := print "/" .Section "/" }}
+          <a class="nav-link{{ if eq $homePage .RelPermalink }} active{{ end }}" href="{{ $homePage }}">Home</a>
+          {{ range $subpages }}
+            {{ if not .Params.private }}
+              {{ if isset .Params "symboliclink" }}
+                <a class="nav-link" href="{{ .Params.symboliclink }}" {{ if .Params.external }} target="_blank" {{end}}>{{ markdownify .Title }}</a>
+              {{else}}
+                <a class="nav-link{{ if eq $currentPage.RelPermalink .RelPermalink }} active{{ end }}" href="{{.RelPermalink}}">{{.Title}}</a>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    <div class="col-12 col-md-8">
+      <div class="service service-single">
+        <div class="content">{{.Content}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+{{ define "footer_js" }}
+{{ $library := resources.Get "js/libs/library.js" }}
+{{ $services := resources.Get "js/pages/services.js" }}
+{{ $servicesJS := slice $library $services |resources.Concat "js/services.js" }}
+{{ if .Site.IsServer }}
+<script type="text/javascript" src="{{ $servicesJS.RelPermalink }}"></script>
+{{ else }}
+<script type="text/javascript" src="{{ ($servicesJS | minify | fingerprint).RelPermalink }}"></script>
+{{ end }}
+{{ end }}

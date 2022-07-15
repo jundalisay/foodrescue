@@ -1,0 +1,68 @@
+<button class="button" id="edoButton">Make a Donation »</button>
+{{ define "footer_js" }}
+<script src="https://assets.every.org/donate-button/executebig/donate-button.js"></script>
+<script>
+  everyMonthWidget.setOptions({
+    onSubmit: {
+      charity: "executebig",
+      params: {
+        share_info: 1,
+        no_exit: 1,
+      },
+    },
+    completeDonationInNewTab: false,
+    defaultMode: 'monthly',
+    currency: 'USD',
+    language: 'en',
+    monthly: {
+      levels: [ // Different choices in monthly donation
+        {amount: '10'},
+        {amount: '25'},
+        {amount: '50', default: true},
+        {amount: '100'},
+        {amount: 'custom'}
+      ],
+      allowCustom: true,
+    },
+    oneTime: {
+      levels: [10, 25, 100, 200], // Different choices in one time donation
+      allowCustom: true, // Allow enter custom amount in one time donation
+    },
+    i18n: {
+      en: {
+        company: {
+          logo: 'https://executebig.org/images/brand/icon.svg',
+          name: 'Food Rescue PH',
+          location: 'Rockville, MD',
+        },
+        monthly: {
+          logo: {
+            header: 'Monthly donation',
+            text: 'via <link>every.org</link>',
+            link: 'https://www.every.org/executebig/',
+          },
+          header: 'Give to Food Rescue PH',
+          info: 'We rely on people like you to bring life-changing experiences to students in need, and your donation will enable us to support more underrepresented students in the long term.',
+          button: 'Donate {{"{{"}}amount{{"}}"}} every month',
+          switch: 'Or make a <action>One Time Donation</action>'
+        },
+        oneTime: {
+          logo: {
+            header: 'One time donation',
+            text: 'on <link>every.org</link>',
+            link: 'https://www.every.org/executebig/',
+          },
+          name: 'One time donation',
+          header: 'Give to Food Rescue PH',
+          info: 'We rely on people like you to bring life-changing experiences to students in need, and your donation will enable us to support more underrepresented students in the long term.',
+          button: 'Donate {{"{{"}}amount{{"}}"}}',
+          switch: 'Or make a <action>Monthly donation</action>'
+        },
+        footer: 'You will be redirected to a secure page on Every.org to complete your donation. Your donation is tax-deductible in the United States to the extent permitted by law. Food Rescue PH is a 501(c)(3) nonprofit with the EIN 85-2160468.'
+      },
+    }
+  });
+  everyMonthWidget.showOnClick('#edoButton');
+  everyMonthWidget.showOnClick('#edoNavButton');
+</script>
+{{ end }}

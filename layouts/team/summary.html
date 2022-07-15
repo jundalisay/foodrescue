@@ -1,0 +1,13 @@
+<div class="team team-summary team-summary-large mb-1">
+  {{ if .Params.image }}
+  <div class="team-image">
+    <img alt="Photo of {{ .Title }}" class="img-fluid" src="{{ .Params.image | relURL }}" />
+  </div>
+  {{ end }}
+  <div class="team-meta">
+    <h2 class="team-name"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p class="team-description">{{ .Params.Jobtitle }}</p>
+    <p class="team-description">{{ .Params.School }} '{{ .Params.class }}</p>
+  </div>
+  <div class="team-content">{{ .Content }}</div>
+</div>
