@@ -5,8 +5,8 @@
 
 
 
-<div class="home-subscribe pb-5" >
-    <form id="subscribe-form" action="https://formcarry.com/s/fG_9Cbp0qe" method="post" data-message-success="Thanks for subscribing!" data-message-missing-email-address="Your email address is required." data-message-invalid-email-address="Your email address looks incorrect, please try again." data-message-bot-submission-error="This doesn't look like a human submission." data-message-consent-required="Please check the checkbox to indicate your consent." data-message-invalid-parameters-error="This form has missing or invalid fields." data-message-unknown-error="Sorry, an unknown error has occurred. Please try again later.">
+<div class="home-subscribe pb-5" id="subscribe-form">
+    <form action="https://formcarry.com/s/fG_9CbpOqe" method="POST" accept-charset="UTF-8" >    
         <div class="form-group">
             <label for="field_0">
                 Email address
@@ -38,7 +38,7 @@
                     <label for="phone">
                         Phone or Mobile
                     </label>
-                    <input id="phone" name="name" type="text" class="form-control" placeholder required="required">
+                    <input id="phone" name="phone" type="text" class="form-control" placeholder required="required">
                 </div>
             </div>
             <div class="col">
@@ -50,14 +50,14 @@
                 </div>
             </div>
         </div>        
-                <div class="form-group">        
-                    <label for="phone">
-                        Your Message
-                    </label>        
-        <textarea class="form-control" type="text" id="message" name="message" class="form-control"></textarea>
-    </div>
-    <button class="button is-primary btn-block" type="submit">
-        Subscribe
-    </button>
+        <div class="form-group">        
+            <label for="phone">
+                Your Message
+            </label>        
+            <textarea class="form-control" type="text" id="message" name="message" class="form-control"></textarea>
+        </div>
+        <button class="button is-primary btn-block" type="submit">
+            Subscribe
+        </button>
     </form>
 </div>
