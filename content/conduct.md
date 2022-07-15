@@ -4,7 +4,7 @@ icon: "/images/icons/heart.svg"
 description: "We need everyone's help to keep our programs safe and productive."
 ---
 
-Food Rescue PH creates inclusive exploration programs for everyone. To accomplish this, We need everyone's help to keep our programs safe and productive.
+Food Rescue Philippines creates inclusive exploration programs for everyone. To accomplish this, We need everyone's help to keep our programs safe and productive.
 
 ## TL;DR
 
@@ -14,14 +14,14 @@ Food Rescue PH creates inclusive exploration programs for everyone. To accomplis
 
 ## Where does the Code of Conduct apply?
 
-If you join in or contribute to the Food Rescue PH ecosystem in any way, you are encouraged to follow the Code of Conduct while doing so.
+If you join in or contribute to the Food Rescue Philippines ecosystem in any way, you are encouraged to follow the Code of Conduct while doing so.
 
-Explicit enforcement of the Code of Conduct applies to all rescues run by Food Rescue PH, and should be applied indifferently to everyone, including all staff, contractors, volunteers, and students involved. It will also apply to any online communities, forums, and other mediums of communication operated by Food Rescue PH.
+Explicit enforcement of the Code of Conduct applies to all rescues run by Food Rescue Philippines, and should be applied indifferently to everyone, including all staff, contractors, volunteers, and students involved. It will also apply to any online communities, forums, and other mediums of communication operated by Food Rescue Philippines.
 
 
 <!-- ## Unwelcome Behavior
 
-These actions are explicitly forbidden in Food Rescue PH rescues:
+These actions are explicitly forbidden in Food Rescue Philippines rescues:
 
 - Grab and go (the Expressing or provoking:
   - insulting, demeaning, hateful, or threatening remarks;

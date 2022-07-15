@@ -1,10 +1,10 @@
 ---
 title: "Privacy Disclosure"
 icon: "/images/icons/lock.svg"
-description: "Food Rescue PH is a nonprofit organization that strongly believes your right to privacy, especially given we work with students on a regular basis. We only ask for your information when we actually need it, and we are very careful when handling data."
+description: "Food Rescue Philippines is a nonprofit organization that strongly believes your right to privacy, especially given we work with students on a regular basis. We only ask for your information when we actually need it, and we are very careful when handling data."
 ---
 
-Food Rescue PH is a volunteer group that strongly believes your right to privacy. We only ask for your information when we actually need it, and we are very careful when handling data.
+Food Rescue Philippines is a volunteer group that strongly believes your right to privacy. We only ask for your information when we actually need it, and we are very careful when handling data.
 
 
 ## Third-Parties
@@ -56,7 +56,7 @@ will be deleted as soon as we finish processing them.
 ## Additional Policies
 
 Aside from our organizational privacy disclosure, you may also be interested in reading about our commitment to privacy in other
-programs of Food Rescue PH. These policies outline the steps that we are taking to ensure we collect, process, and potentially release the right 
+programs of Food Rescue Philippines. These policies outline the steps that we are taking to ensure we collect, process, and potentially release the right 
 information to create a safe environment for you to be involved in our programs. 
 
 * **Research**: [Privacy Promise for Research Data](/research/privacy)
@@ -66,6 +66,6 @@ information to create a safe environment for you to be involved in our programs.
 You may request a copy of your data or ask us questions about this privacy disclosure by [contacting us](/contact) through 
 emailing, calling, or writing to us. 
 
-**Food Rescue PH will never sell your personal information to third parties.**
+**Food Rescue Philippines will never sell your personal information to third parties.**
 
 *Last updated: May 17, 2021* -->

@@ -1,9 +1,11 @@
 baseURL = "https://foodrescueph.site/"
 languageCode = "en-us"
-title = "Food Rescue PH"
+title = "Food Rescue Philippines"
 
 disableHugoGeneratorInject = true
 disableKinds = ["categories"]
+
+formcarry = "https://formcarry.com/s/fG_9Cbp0qe"
 
 enableRobotsTXT = true
 ignoreErrors = ["error-remote-getjson"]
@@ -27,11 +29,11 @@ home = ["HTML","RSS"]
     desktop = "logo.jpg"
     desktop_height = "36px"
     desktop_width = "131px"
-    alt = "Food Rescue PH"
+    alt = "Food Rescue Philippines"
 
   [params.homepage_meta_tags]
     meta_description = "We rescue food waste and reprocess them for feeding programs or for donations to the poor to prevent hunger and malnutrition."
-    meta_og_title = "Food Rescue PH"
+    meta_og_title = "Food Rescue Philippines"
     meta_og_type = "website"
     meta_og_url = "https://foodrescueph.site"
     meta_og_description = "We rescue food waste and reprocess them for feeding programs or for donations to the poor to prevent hunger and malnutrition."

@@ -10,7 +10,7 @@ jobtitle: "Founder"
 location: "Mandaluyong, Metro Manila"
 promoted: true
 weight: 1
-description: Mr. Magic is also a voice-over artist. His passion for helping others got Food Rescue PH started.
+description: Mr. Magic is also a voice-over artist. His passion for helping others got Food Rescue Philippines started.
 ---
 
-Mr. Magic is also a voice-over artist. His passion for helping others got Food Rescue PH started.
+Mr. Magic is also a voice-over artist. His passion for helping others got Food Rescue Philippines started.

@@ -1,7 +1,7 @@
 {
   "name": "foodrescueph",
   "version": "1.0.0",
-  "description": "Food Rescue PH aims to eliminate food waste.",
+  "description": "Food Rescue Philippines aims to eliminate food waste.",
   "license": "MIT",
   "private": true,
   "dependencies": {
