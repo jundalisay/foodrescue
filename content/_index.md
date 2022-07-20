@@ -20,5 +20,5 @@ Leave your details in the subscription form above.
 {{< /expand >}}
 
 {{< expand "What are Pantrypoints?" >}}
-It's our record keeping tool for large medium to large food rescues. We'll add info later.
+[Pantrypoints](https://pantrypoints.com) is our record keeping tool for large medium to large food rescues. We'll add info later.
 {{< /expand >}}

@@ -1,12 +1,19 @@
 <h1>
     Let's <em>end food waste</em> in the Philippines!
 </h1>
-<h2 id="intro-subtitle">Food Rescue Philippines is a volunteer group that does food rescue in the Philippines. Subscribe below to know where the next food rescue in the Philippines will be!</h2>
+<p id="intro-subtitle">Food Rescue Philippines is a volunteer group that does food rescue in the Philippines</p>
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g1uMbxLDPPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- https://www.youtube.com/watch?v=g1uMbxLDPPs -->
+
+<p class="mt-5">Subscribe below to know where the next food rescue in the Philippines will be!</p>
 
 
 <div class="home-subscribe pb-5" id="subscribe-form">
-    <form action="https://formcarry.com/s/fG_9CbpOqe" method="POST" accept-charset="UTF-8" >    
+    <form action="http://localhost:4001/api/email" method="POST" accept-charset="UTF-8" >       
+<!--     <form action="https://formcarry.com/s/fG_9CbpOqe" method="POST" accept-charset="UTF-8" >     -->
         <div class="form-group">
             <label for="field_0">
                 Email address
@@ -20,7 +27,8 @@
                     <label for="name">
                         Name
                     </label>
-                    <input id="name" name="name" type="text" class="form-control" placeholder required="required">
+                    <input id="name" name="email[name]" type="text" class="form-control" placeholder required="required">
+<!--                     <input id="name" name="name" type="text" class="form-control" placeholder required="required"> -->
                 </div>
             </div>
             <div class="col-lg-6 col-sm-12">
@@ -28,7 +36,8 @@
                     <label for="city">
                         Location (City and Barangay)
                     </label>
-                    <input id="city" name="city" type="text" class="form-control" placeholder required="required">
+                    <input id="city" name="name[city]" type="text" class="form-control" placeholder required="required">                    
+<!--                     <input id="city" name="city" type="text" class="form-control" placeholder required="required"> -->
                 </div>
             </div>
         </div>
@@ -38,7 +47,9 @@
                     <label for="phone">
                         Phone or Mobile
                     </label>
-                    <input id="phone" name="phone" type="text" class="form-control" placeholder required="required">
+                    <input id="phone" name="email[phone]" type="text" class="form-control" placeholder required="required">
+                    <input id="assignee" name="email[assignee]" type="hidden" value="1">                    
+<!--                     <input id="phone" name="phone" type="text" class="form-control" placeholder required="required"> -->
                 </div>
             </div>
             <div class="col-lg-6 col-sm-12">
@@ -46,7 +57,8 @@
                     <label for="fb">
                         Facebook Name or URL
                     </label>
-                    <input id="fb" name="fb" type="text" class="form-control">
+                    <input id="fb" name="email[fb]" type="text" class="form-control">
+<!--                     <input id="fb" name="fb" type="text" class="form-control"> -->
                 </div>
             </div>
         </div>        
@@ -54,7 +66,8 @@
             <label for="phone">
                 Your Message
             </label>        
-            <textarea class="form-control" type="text" id="message" name="message" class="form-control"></textarea>
+            <textarea class="form-control" type="text" id="message" name="email[message]" class="form-control"></textarea>
+<!--             <textarea class="form-control" type="text" id="message" name="message" class="form-control"></textarea> -->
         </div>
         <button class="button is-primary btn-block" type="submit">
             Subscribe
