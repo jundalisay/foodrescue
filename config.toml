@@ -96,7 +96,7 @@ home = ["HTML","RSS"]
       
 
 [taxonomies]
-  journals_tags = "journals/tags"
+  rescues_tags = "rescues/tags"
 
 [sitemap]
   filename = "sitemap.xml"

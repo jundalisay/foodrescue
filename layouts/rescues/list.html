@@ -36,7 +36,7 @@
     <div class="col-12 col-md-4">
       <div class="aside tags">
         <h2>View By Tags</h3>
-          {{range ($.Site.GetPage "taxonomyTerm" "journals/tags").Pages }}
+          {{range ($.Site.GetPage "taxonomyTerm" "rescues/tags").Pages }}
           <a href="{{ .RelPermalink }}"><span class="tag badge badge-pill badge-primary">{{.Title}}</span></a>
           {{end}}
       </div>
