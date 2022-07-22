@@ -25,8 +25,8 @@ home = ["HTML","RSS"]
     show = true
 
   [params.logo]
-    mobile = "logo.jpg"
-    desktop = "logo.jpg"
+    mobile = "/icons/main.png"
+    desktop = "/icons/main.png"
     desktop_height = "36px"
     desktop_width = "131px"
     alt = "Food Rescue Philippines"

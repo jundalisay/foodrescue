@@ -8,5 +8,10 @@
         "name": "YouTube",
         "link": "https://www.youtube.com/channel/UCbJTvhqSz40WVys8Dcwl5LA",
         "image": "images/social/youtube.svg"
+    },
+    {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/foodrescuephilippines",
+        "image": "images/social/instagram.svg"
     }
 ]

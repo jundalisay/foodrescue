@@ -1,8 +1,8 @@
 [
   {
-    "name": "Pantry Peers",
-    "logo": "pantry.png",
-    "link": "https://pantrypoints.com/peers"
+    "name": "Panda Mart",
+    "logo": "pandamart.png",
+    "link": "https://www.foodpanda.ph/darkstore/c9bn/pandamart-manila"
   },
   {
     "name": "Capri Island Vegan Cafe",
@@ -13,5 +13,10 @@
     "name": "Elivir's",
     "logo": "elivirs.png",
     "link": "https://elivirs.com"    
-  }
+  },
+  {
+    "name": "Pantry Peers",
+    "logo": "pantry.png",
+    "link": "https://pantrypoints.com/peers"
+  }  
 ]

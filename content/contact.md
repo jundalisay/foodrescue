@@ -8,7 +8,7 @@ Got any interesting ideas that you'd like to share with us? Want to discuss a po
 
 ## Email Inquries
 
-Please email **foodrescueph@gmail.com** for any business inquries. You can also view each team member's email address over at [Team](/team).
+Please email **foodrescueph@gmail.com** for any inquries. You can also view each team member's email address over at [Team](/team).
 
 ## Mailing Address
 
