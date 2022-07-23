@@ -17,3 +17,5 @@
 
 [build.environment]
   HUGO_VERSION = "YOUR_HUGO_VERSION"
+
+
