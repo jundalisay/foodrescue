@@ -8,6 +8,7 @@ title: "Home"
 
 ## Frequently Asked Questions
 
+
 {{< expand "What's Food Rescue?" >}}
 You get the food waste from a wet market, restaurant, farm, etc. using your own transportation method. The most common method is by bicycle because the volume or weight varies. However, we promote the use of public transportation, such as with a stroller, to reduce the use of cars. 
 {{< /expand >}}
