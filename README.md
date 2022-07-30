@@ -2,4 +2,5 @@
 
 This is the repo for [https://foodrescueph.site](https://foodrescueph.site)
 
-![Logo](/icons/main.png)
+![Logo](https://foodrescueph.site/icons/main.png)
+
