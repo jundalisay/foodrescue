@@ -7,6 +7,10 @@ disableKinds = ["categories"]
 
 formcarry = "https://formcarry.com/s/fG_9Cbp0qe"
 
+googleAnalitycsID= "G-2YEM6FJ3MT"
+
+
+
 enableRobotsTXT = true
 ignoreErrors = ["error-remote-getjson"]
 

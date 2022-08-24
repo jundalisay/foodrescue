@@ -32,15 +32,17 @@
   {{ end }}
   {{ block "header_css" . }}{{ end }}
 
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YEM6FJ3MT"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalitycsID }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-2YEM6FJ3MT');
+    gtag('config', '{{ .Site.Params.googleAnalitycsID }}');
   </script>
+  
 
 </head>
 
