@@ -58,6 +58,10 @@ home = ["HTML","RSS"]
       url = "/rescues/"
       weight = 3
 
+  [[menu.main]]
+      name = "Partners"
+      url = "/partners/"
+      weight = 4
   # [[menu.main]]
   #     name = "Subscribe"
   #     url = "/subscribe"
