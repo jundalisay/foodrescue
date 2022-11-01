@@ -26,7 +26,7 @@ Leave your details in the subscription form above.
 {{< /expand >}}
 
 {{< expand "Who started Food Rescue Philippines?" >}}
-Mac Florendo began Food Rescue by drawing inspiration from Boulder Food Rescue when he attended the Young Southeast Asian Leaders Initiative in 2015. 
+Mac Florendo began Food Rescue by drawing inspiration from Hana Dansky's Boulder Food Rescue when he attended the Young Southeast Asian Leaders Initiative in 2015. 
 
 Food Rescue Philippines was recognized at the YSEALI Seeds for the Future 2015 and was awarded a grant by the U.S. Mission to ASEAN, and one of the Ten Accomplished Youth Organizations (TAYO) of the 14th TAYO Awards in 2017. Mac is a Youth Champion for The 2030 Project: SDG2 Zero Hunger
 {{< /expand >}}
