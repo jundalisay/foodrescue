@@ -1,4 +1,5 @@
-baseURL = "https://foodrescueph.site/"
+# baseURL = "https://foodrescueph.site/"
+baseURL = "https://foodrescue.pantrypoints.com/"
 languageCode = "en-us"
 title = "Food Rescue Philippines"
 
